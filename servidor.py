@@ -48,10 +48,7 @@ def task(connection, client):
 
 		elif mensagemjson['opcao']==str(2):
 			resultado = getContato(arquivo)
-		'''
-
-			
-			connection.send(bytes(json.dumps(resultado), 'utf-8'))
+		'''connection.send(bytes(json.dumps(resultado), 'utf-8'))
 
 
 	connection.close()
